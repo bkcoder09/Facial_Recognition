@@ -34,7 +34,7 @@ function gotResult(error, results){
     }
     else{
         console.log(results);
-        document.getElementById("person_name").innerHTML = results.label[0];
-        document.getElementById("person_accuracy").innerHTML = results.confidence[0].toFixed(3);
-    };
+      document.getElementById("person_name").innerHTML = results[0].label;
+        document.getElementById("person_accuracy").innerHTML = results[0].confidence.toFixed(3);
+    }
 }
